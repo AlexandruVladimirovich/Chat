@@ -1,67 +1,35 @@
-html, body {
-  font-family: "Roboto", sans-serif;
-  padding: 0;
-  margin: 0;
-}
-
-#root {
-  height: 100vh;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.joinOuterContainer {
+.join-container {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  text-align: center;
-  height: 100vh;
   align-items: center;
-  background-color: #1A1A1D;
+  height: 100vh;
+  background-color: #5c5c5c;
 }
 
-.joinInnerContainer {
-  width: 20%;
+.join {
+  margin: 0 auto;
 }
 
-.joinInput {
-  border-radius: 0;
-  padding: 15px 20px;
-  width: 100%;
+.join-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 4px;
 }
 
-.heading {
-  color: white;
-  font-size: 2.5em;
-  padding-bottom: 10px;
-  border-bottom: 2px solid white;
+.join-signIn-btn, .join-inputs input {
+  width: 280px;
+  height: 50px;
+  padding: 4px;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
-.button {
-  color: #fff !important;
-  text-transform: uppercase;
+.join-signIn-btn {
+  background-color: #3b478a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  background: #2979FF;
-  padding: 20px;
-  border-radius: 5px;
-  display: inline-block;
-  border: none;
-  width: 100%;
-}
-
-.mt-20 {
-  margin-top: 20px;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .joinOuterContainer {
-    height: 100%;
-  }
-  .joinInnerContainer {
-    width: 90%;
-  }
-}
-button:focus {
-  outline: 0;
+  color: #ffffff;
 }/*# sourceMappingURL=Join.css.map */
