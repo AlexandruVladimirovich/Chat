@@ -11,15 +11,19 @@ const server = http.createServer(app);
 
 app.use(cors());
 
-const io = socketio(server, {
+const socketIo = socketio(server, {
     cors: {
         origin: "http://localhost:5173",
         methods: ["GET", "POST"]
     }
 });
 
-io.on('connection', (socket) => {
+socketIo.on('connection', (socket) => {
     console.log(`У нас новое подключение: ${socket.id}`);
+
+    socket.on('message', (data)=>{
+        socketIo.emit('response',data)
+    })
 
     socket.on('disconnect', () => {
         console.log(`${socket.id} отключился`);

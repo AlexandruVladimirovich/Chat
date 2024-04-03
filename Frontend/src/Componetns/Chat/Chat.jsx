@@ -1,17 +1,7 @@
-import React, { useState, useEffect } from "react";
-import '../Chat/chat.css';
+import React from 'react'
 
-const Chat = ({socket}) => {
-  // const [name, setName] = useState('');
-  // const [room, setRoom] = useState('');
-
-
+export default function Chat() {
   return (
-    <div className="chat-container">
-      <div className="chat-dialogs"></div>
-      <div className="chat"></div>
-    </div>
-  );
+    <div>Chat</div>
+  )
 }
-
-export default Chat;

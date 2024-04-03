@@ -1,4 +1,4 @@
-.chat-container {
+.chatPage-container {
   width: 100%;
   display: grid;
   height: 100vh;
@@ -8,9 +8,9 @@
   background-color: #5c5c5c;
 }
 
-.chat-dialogs{
-  background-color: #2c1f1f;
-  height: 100vh;
+.messageBlock{
+  display: grid;
+  grid-template-rows: 9fr 1fr;
 }
 
 .chat{
