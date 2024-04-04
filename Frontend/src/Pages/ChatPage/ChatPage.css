@@ -1,0 +1,32 @@
+.chatPage-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 4fr;
+}
+
+.chatPageMain {
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+}
+
+.messageInputs {
+  width: 100%;
+}
+
+.chatPageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+}
+
+.chatPageHeader button {
+  background-color: #b33d3d;
+  color: #fff;
+  border: none;
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}/*# sourceMappingURL=ChatPage.css.map */

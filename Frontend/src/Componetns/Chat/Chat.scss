@@ -1,0 +1,14 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-left, .chat-right{
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.chat-left{
+    justify-content: start;
+}

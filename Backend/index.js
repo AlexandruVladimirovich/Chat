@@ -23,6 +23,7 @@ socketIo.on('connection', (socket) => {
 
     socket.on('message', (data)=>{
         socketIo.emit('response',data)
+        console.log('Message:', data)
     })
 
     socket.on('disconnect', () => {
