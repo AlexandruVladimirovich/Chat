@@ -3,12 +3,23 @@
   flex-direction: column;
 }
 
-.chat-left, .chat-right {
+.yourMessages, .otherMessages {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  align-items: end;
+  flex-direction: column;
+  padding: 8px;
 }
 
-.chat-left {
+.otherMessages {
   justify-content: start;
+  align-items: start;
+}
+
+.userName {
+  font-size: 16px;
+  font-weight: 800;
+  padding-bottom: 4px;
+  color: rgb(159, 11, 11);
 }/*# sourceMappingURL=Chat.css.map */

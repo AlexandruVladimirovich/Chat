@@ -7,12 +7,14 @@ export default function Chat({ messages }) {
       {messages.map(element => (
         <div key={element.id}>
           {element.userName === localStorage.getItem('userName') ? (
-            <div className="chat-right">
-            <span className='right'>{element.text}</span>
+            <div className="yourMessages">
+            <span className='yourMessage userName'>{element.userName}</span>
+            <span className='yourMessage'>{element.text}</span>
           </div>
           ) : (
-            <div className="chat-left">
-              <span className='left'>{element.text}</span>
+            <div className="otherMessages">
+              <span className='otherMessage userName'>{element.userName}</span>
+              <span className='otherMessage'>{element.text}</span>
             </div>
           )}
         </div>
